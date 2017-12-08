@@ -5,6 +5,8 @@
 
 > 已经集成 vue-router、jquery、element-ui、scss
 
+> 添加修改主题色，基于element-ui 
+
 ## Build Setup
 
 ``` bash
