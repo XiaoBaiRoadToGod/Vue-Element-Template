@@ -1,7 +1,9 @@
 # vue-cli-tamplate
 
 > A Vue.js project
-> 已经集成jquery、element-ui、scss
+
+
+> 已经集成 vue-router、jquery、element-ui、scss
 
 ## Build Setup
 
