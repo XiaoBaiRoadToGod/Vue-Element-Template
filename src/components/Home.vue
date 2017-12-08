@@ -1,7 +1,9 @@
 <template>
   
     <el-container>
-        <el-header>Header</el-header>
+        <el-header>Header
+            <ChangeTheme/>
+        </el-header>
         <el-container>
             <el-aside width="200px">
                 <el-menu
@@ -36,8 +38,14 @@
 
 </template>
 <script>
+import ChangeTheme from '@/components/changeTheme/changeTheme'
 export default {
+    data () {
+        return {
 
+        }
+    },
+    components: { ChangeTheme }
 }
 </script>
 <style lang="scss" scoped>
