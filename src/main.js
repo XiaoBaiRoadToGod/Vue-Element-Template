@@ -12,6 +12,20 @@ import 'font-awesome/css/font-awesome.css'
 Vue.config.productionTip = false
 Vue.use(ElementUI)
 /* eslint-disable no-new */
+
+router.beforeEach((to, from, next ) => {
+  console.log(to)
+  if(to.path == '/Login') {
+    sessionStorage.removeItem('user')
+  }
+  let user = JSON.stringify(sessionStorage.getItem('user'))
+  console.log(user == 'null')
+  if(user == 'null' && to.path != '/Login') {
+    next({path: '/Login'})
+  } else {
+    next()
+  }
+})
 new Vue({
   el: '#app',
   router,
