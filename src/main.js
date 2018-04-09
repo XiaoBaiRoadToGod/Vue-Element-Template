@@ -8,6 +8,7 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import 'element-ui/lib/theme-chalk/reset.css'
 import 'font-awesome/css/font-awesome.css'
+import i18n from './i18n/i18n'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI)
@@ -26,9 +27,10 @@ router.beforeEach((to, from, next ) => {
     next()
   }
 })
-new Vue({
+window.app =  new Vue({
   el: '#app',
   router,
+  i18n,
   template: '<App/>',
   components: { App }
 })
